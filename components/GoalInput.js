@@ -15,7 +15,7 @@ const GoalInput = props => {
           placeholder="Course Goal"
           style={ styles.input}
           onChangeText={goalInputHandler}
-          value={enteredGoal}
+          value={enteredGoal} 
         />
         <Button title="ADD"  onPress={() => props.addGoalHandler(enteredGoal)}/>
       </View>
@@ -25,8 +25,8 @@ const GoalInput = props => {
 
 const styles = StyleSheet.create({
   inputContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flex:1,
+    justifyContent: 'center',
     alignItems: 'center'
   },
   input: {
